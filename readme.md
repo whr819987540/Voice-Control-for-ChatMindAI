@@ -32,3 +32,12 @@ Second, open your browser(eg: Google Chrome). Follow the steps of "Extensions", 
 
 Third, select the directory which stores the repository and click "OK".
 
+# video demo
+
+[voice-control-for-chatmindai-demo](https://www.bilibili.com/video/BV1xM4y127WV/)
+
+
+
+
+
+**If you find this project could help you, please give me a star to encourage me to optimize it.**
