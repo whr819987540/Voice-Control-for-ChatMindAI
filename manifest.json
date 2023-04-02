@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Voice Control for ChatMindAI",
+  "version": "1.0.1",
+  "description": "Expands ChatGPT with voice control and read aloud. Only supported for https://chatmindai.cn/. Note: This extension is based on another extension(Voice Control for ChatMindAI). If there is any problem, please send email to steeliron550@gmail.com.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "entry.js"
+      ],
+      "matches": [
+        "https://chatmindai.cn/*"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "Voice Control for ChatMindAI",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://chatmindai.cn/*"
+      ],
+      "resources": [
+        "index.js"
+      ]
+    }
+  ]
+}

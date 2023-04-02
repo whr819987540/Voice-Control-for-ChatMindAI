@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        padding: 15px;
+        font-family: arial;
+        font-size: 100%;
+      }
+
+      h1 {
+        font-family: "arial black", sans-serif;
+        font-size: 16px;
+        color: #333;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 13px;
+        color: #333;
+        margin-top: 0;
+      }
+
+      h3 span {
+        color: #1abc9c;
+      }
+
+      a,
+      a:visited,
+      a:focus,
+      a:hover {
+        color: #1abc9c;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        opacity: 0.8;
+      }
+
+      .talkio-link {
+        color: #7e64ed !important;
+      }
+
+      p,
+      li {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      li strong {
+        color: #9a8e81;
+      }
+
+      ul {
+        padding-left: 10px;
+        margin: 0;
+      }
+
+      li {
+        margin-top: 5px;
+      }
+
+      section {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+      }
+
+      .slidecontainer {
+        width: 100%;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+
+      .slider:hover {
+        opacity: 1;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #1abc9c;
+        cursor: pointer;
+      }
+
+      .invisible {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup-container">
+      <h1>Voice Control for ChatGPT</h1>
+
+      <section id="not-on-app">
+        <p style="margin: 0">
+          Please go to
+          <a href="https://chat.openai.com/chat" target="_blank"> ChatGPT </a>
+          to use this extension.
+        </p>
+      </section>
+
+      <div id="on-app" class="invisible">
+        <section>
+          <p style="margin-top: 0">
+            <em>
+              Looking for Read Aloud Speed? It's been moved to the settings menu
+              next to the mute button.
+            </em>
+          </p>
+        </section>
+
+        <section>
+          <h3>Keyboard shortcuts</h3>
+          <ul>
+            <li>
+              Press-and-hold <strong>SPACE</strong> (outside text input) to
+              record, and release to submit
+            </li>
+            <li>
+              Press <strong>ESC</strong> or <strong>Q</strong> to cancel a
+              transcription
+            </li>
+            <li>
+              Press <strong>E</strong> to stop and copy the transcription to the
+              ChatGPT input field without submitting
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Need help?</h3>
+          <p>
+            Please fill out
+            <a href="https://forms.gle/BA3AU9LdApsZDBW28" target="_blank">
+              this form
+            </a>
+            or
+            <a href="mailto:support@aidia.dk" target="_blank">write an email</a>
+          </p>
+        </section>
+
+        <section>
+          <p style="margin: 0">
+            <em>
+              Upgrade your language learning experience with
+              <a href="https://talkio.ai/" target="_blank" class="talkio-link">
+                Talkio AI</a
+              >, the premium version of this extension designed specifically for
+              language learners.
+            </em>
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
