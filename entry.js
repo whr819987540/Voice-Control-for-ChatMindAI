@@ -1,8 +1,13 @@
 console.log("entry.js")
 
-// 为了防止页面未加载完就执行内容脚本，需要等html中出现textarea这个label后再执行该内容脚本
-// 目标节点
-const targetNode = document.getElementsByTagName("textarea");
+// 为了防止页面未加载完就执行内容脚本，需要等html中出现targetNode后再执行该内容脚本
+// TODO: 目标节点类名
+const targetNodeClassName = "css-1u4ixga";
+console.log(targetNodeClassName)
+// TODO: selector
+const Selector = "#history > div > div.css-iz8e4e > div > div > div";
+console.log(Selector)
+
 // 注册观察器
 const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
