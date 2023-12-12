@@ -251,7 +251,7 @@ const observer = new MutationObserver((mutations) => {
                         }
                     }
                     observerCallback(e) {
-                        const n = this.getText();
+                        const n = this.getText(); // 获取文本
                         0 === n.length && (t.info("No text, reset"), this.reset());
                         const s = n.replace(this.lastText.trim(), "").trim(),
                             i = s[s.length - 1],
