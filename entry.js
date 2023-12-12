@@ -550,6 +550,7 @@ const observer = new MutationObserver((mutations) => {
                     }
                 }
                 const p = a[0][1];
+                // 语音转文字
                 class g {
                     constructor(e = !1) {
                         (this.isRecording = !1), (this.language = p), (this.spaceIsDown = !1), t.info("Init app");
