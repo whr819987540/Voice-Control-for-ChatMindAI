@@ -242,6 +242,7 @@ const observer = new MutationObserver((mutations) => {
                             n && this.reset();
                     }
                     async runQueue() {
+                        console.log(this.queue.length > 0, this.queueIdle);
                         if ((t.info(`Queue is idle: ${this.queueIdle}`), this.queue.length > 0 && this.queueIdle)) {
                             this.queueIdle = !1;
                             const e = this.queue.shift();
