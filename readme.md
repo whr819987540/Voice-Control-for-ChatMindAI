@@ -36,3 +36,8 @@ Third, select the directory which stores the repository and click "OK".
 
 [voice-control-for-chatmindai-demo](https://www.youtube.com/watch?v=9tmP1BsTPwY)
 
+
+
+
+
+**If you find this project could help you, please give me a star to encourage me to optimize it.**
