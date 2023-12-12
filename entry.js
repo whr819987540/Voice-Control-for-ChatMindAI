@@ -14,8 +14,8 @@ const observer = new MutationObserver((mutations) => {
         const nodesAdded = Array.from(mutation.addedNodes); // 获取被添加的节点列表
         for (var nodeAdded of nodesAdded) {
             // console.log(nodeAdded);
-            // console.log(nodeAdded.className);
-            if (nodeAdded.className == "n-config-provider h-full") {
+            console.log(nodeAdded.className);
+            if (nodeAdded.className == targetNodeClassName) {
                 // 停止观察
                 observer.disconnect();
                 // 包含目标节点，则执行 JS
