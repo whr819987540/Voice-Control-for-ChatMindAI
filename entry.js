@@ -413,6 +413,7 @@ const observer = new MutationObserver((mutations) => {
                         // use css selector
                         const e = document.querySelectorAll(Selector),
                             n = e[e.length - 1]?.children ?? [];
+                        console.log("getText", e.length, e, n)
                         let t = "";
                         for (const e of n) "PRE" !== e.nodeName && (t += e.textContent);
                         return (
