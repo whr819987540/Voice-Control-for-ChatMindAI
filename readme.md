@@ -17,7 +17,7 @@ So I need to write an extension on my own, perhaps on other people's previous an
 
 Below are my requirements for the extension, as well as the features of the extension.
 
-- Support at least [this website](https://chatmindai.cn/).
+- Support at least [this website](https://x.chatmindai.net/chat).
 - Provide at least Chinese and English voice recognition.
 
 # usage
