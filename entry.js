@@ -409,7 +409,8 @@ const observer = new MutationObserver((mutations) => {
                     getText() {
                         // 这里需要进行修改
                         // openai官网的回复的类是"markdown"
-                        const e = document.querySelectorAll(".markdown-body"),
+                        // use css selector
+                        const e = document.querySelectorAll(Selector),
                             n = e[e.length - 1]?.children ?? [];
                         let t = "";
                         for (const e of n) "PRE" !== e.nodeName && (t += e.textContent);
