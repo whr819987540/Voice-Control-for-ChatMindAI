@@ -286,6 +286,8 @@ const observer = new MutationObserver((mutations) => {
                             if (!document.getElementById("sai-root")) return void n(void 0);
                             let a = e.replace(/([0-9]+)\.(?=[0-9]+(?!\.))/g, "$1,");
                             this.synth = window.speechSynthesis;
+                            console.log(`actually read: ${e}`);
+                            console.log(this.synth.getVoices(),this.lang)
                             const o = new SpeechSynthesisUtterance(a),
                                 r = this.synth
                                     .getVoices()
