@@ -213,6 +213,7 @@ const observer = new MutationObserver((mutations) => {
                         e && ((this.selected = e), this.selectLanguage(e));
                     }
                 }
+                // 文字转语音
                 class d {
                     constructor(e, n) {
                         (this.lang = e),
